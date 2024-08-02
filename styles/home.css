@@ -1,0 +1,292 @@
+.search_box_div{
+    padding-top: 2rem;
+    font-family: "roboto";
+  
+
+    
+}
+.search_box_div h1{
+    margin-bottom: 1.6rem;
+    margin-left: 2rem;
+}
+.search_box_div p{
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+.search_box{
+    width: 70%;
+    margin: auto;
+ border: 1px solid #006dae;
+    padding: 1rem;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 2rem;
+}
+.search_box i{
+    font-size: 2rem;
+    color:#006dae;
+    margin-left: 1rem;
+    
+}
+.search_box span{
+    font-size: 1.5rem;
+margin-left: 1.5rem;
+    display: block;
+
+   
+}
+.make_change{
+    text-align: center;
+    padding-top: 4rem;
+    font-family: "poppins";
+    padding-bottom: 4rem;
+     width: fit-content;
+     margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+ 
+
+}
+.make_change p{
+text-align: center;
+
+}
+.make_change p{
+    font-size: 1.5rem;
+    width: fit-content;
+}
+.make_change h1{
+margin-bottom: 1rem;
+}
+
+.uni{
+    display: flex;
+   width: fit-content;
+   margin: auto;
+   gap: 2rem;
+   flex-wrap: wrap;
+    
+}
+.one_uni{
+    display: flex;
+
+  width: 450px;
+  height: 250px;
+    font-family: "roboto";
+    box-shadow: 1px 1px 3px grey ;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.one_uni i{
+    font-size: 3rem;
+    margin-left: 2rem;
+    color: #006dae;
+}
+.one_uni h3{
+    color: #006dae;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.one_uni p{
+    font-size: 1.2rem;
+
+}
+.make_change_vid{
+    width: 95%;
+    margin: auto;
+box-shadow: 1px 1px 5px grey;
+ display: flex;
+    flex-direction: row;
+
+}
+.top_change_vid{
+    height: 10rem;
+    background: #00000043;
+    flex: 1;
+}
+.bottom_change_vid{
+    padding: 2rem;
+    font-family:"poppins" ;
+    flex: 1
+}
+.bottom_change_vid h3{
+    font-size: 1.7rem;
+    
+
+}
+.bottom_change_vid p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: grey;
+
+}
+.watch_change_vid{
+    color: white;
+    border: none;
+    background: #006dae;
+    font-family: "roboto";
+    font-size: 1.5rem;
+    margin-top:2rem ;
+    padding: 1rem;
+}
+.statistics{
+    background-image: url("https://www.monash.edu/__data/assets/image/0007/3096970/varieties/banner.static.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+.statistics h2{
+    font-family: "roboto";
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.statistics .p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "poppins";
+}
+.stats{
+    background: #000000b7;
+    margin-top: 1rem;
+    padding: 2rem;
+    width: 400px;
+}
+.stats i{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    
+}
+.stats h4{
+    font-family: roboto;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.stats p{
+    font-family: roboto;
+    font-size: 1.2rem;
+}
+.stats span{
+    font-size: 2rem;
+    font-weight: 600;
+    position:relative;
+    top: -1.5rem;
+}
+.under_stat_main{
+    display: flex;
+ 
+    gap: 2rem;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+
+}
+
+.lattest_news{
+
+    margin-top: 4rem;
+}
+.lattest_news h2{
+    margin: auto;
+    text-align: center;
+    font-family: "roboto";
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+.under_lat{
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+}
+.under_lat img{
+    width: 500px;
+
+}
+.under_lat div{
+ width: 300px;
+}
+.under_lat div h3{
+    color: #006dae;
+    font-size: 1.5rem;
+    font-family: "roboto";
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.under_lat p {
+    width: 500px;
+    font-size: 1.3rem;
+    font-family: "roboto";
+    margin-bottom: 4rem;
+}
+.under_lat span{
+    font-family: "poppins";
+
+}
+.impact{
+    margin-top: 3rem;
+
+}
+@media only screen and (max-width: 1400px) {
+
+.uni{
+    display: block;
+    width: fit-content;
+    margin: auto;
+
+
+}
+.make_change_vid{
+    flex-direction: column;
+}
+/* .one_uni{
+   
+  
+} */
+.top_change_vid{
+    order: 1;
+
+}
+.bottom_change_vid{
+    order: 2;
+}
+.under_stat_main{
+    display: block;
+}
+.stats{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+}
+.under_lat{
+    display: block;
+    width: 400px;
+}
+.lattest_news{
+    width: fit-content;
+    margin: auto;
+    margin-top: 5rem;
+}
+.under_lat img{
+    width: 500px;
+
+}
+.under_lat img{
+    width: 300px;
+
+}
+.lattest_news{
+width: 300px !important;
+}
+
+.under_lat p {
+    width: 300px;
+}
+option{
+font-size: 0.7rem;
+}
+}

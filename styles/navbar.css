@@ -1,0 +1,255 @@
+
+.top_nav{
+    background: #006dae;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    font-family: "roboto";
+}
+.right_top_nav{
+    display: flex;
+    color: white;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.left_top_nav{
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    margin-left: 0.5rem;
+}
+.left_top_nav select{
+    background: inherit;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: -0.2rem;
+    cursor: pointer;
+}
+.fa-house{
+
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.fa-house:hover{
+background: #003d60;
+   
+}
+.left_top_nav select option{
+    color: black;
+
+    cursor: pointer;
+    background: white;
+}
+.left_top_nav select:hover{
+    background: #003d60;
+}
+.mid_top_nav{
+    display: flex;
+    font-size: 1.5rem;
+    color: white;
+    gap: 2rem;
+
+}
+.mid_top_nav p{
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-top: -0.2rem;
+}
+.mid_top_nav p:hover{
+    background: #003d60;
+}
+.right_top_nav span{
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.right_top_nav p{
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.right_top_nav p:hover{
+background: #003d60;
+}
+
+.hover_div { background: white;
+    padding: 1.5rem;
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+margin-top: -2rem;
+box-shadow: 1px 1px 5px grey;
+padding-top: -1rem;
+
+}
+.hover_div:hover{
+    display: block;
+
+}
+.hover_div p:hover{
+    color: #006dae;
+    text-decoration: underline;
+}
+.hover_div p{
+    margin-top: 1rem;
+    cursor: pointer;
+   
+}
+.hover_div.show {
+    display: block;
+}
+.collapsable_div{
+    display: flex;
+    justify-content: space-between;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 1.3rem;
+    
+}
+.collapsable_div .coll_p{ 
+margin: 2rem;
+   font-weight: 500;
+    font-size: 1.3rem;
+    
+
+}
+.collapsable_div .coll_p:hover{
+    color: #006dae;
+    text-decoration: underline;
+}
+.mid_nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 0.8rem;
+}
+.fa-bars{
+    font-size: 2rem !important; 
+}
+
+.top_res_nav{
+    background: #006dae;
+    display: flex;
+    color: white;
+    gap: 2rem;
+    padding: 0.5rem;
+    font-family: "poppins";
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+}
+.top_res_nav i{
+    margin-top: 0.2rem;
+    padding: 0.5rem;
+}
+.top_res_nav i:hover{
+background: #003d60;
+cursor: pointer;
+}
+.top_res_nav p{
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+.top_res_nav p:hover{
+text-decoration: underline;
+pointer-events: painted;
+cursor: pointer;
+
+
+}
+.responsive_left_navbar{
+    position: absolute;
+    background: white;
+    height: 900px;
+    top: 0rem;
+    left: 0rem;
+    display: none;
+}
+.fa-xmark{
+    margin-top: 1rem;
+    position: absolute;
+    font-size: 2rem;
+    right: 2rem;
+    margin-bottom: 4rem !important;
+}
+.bottom_res_nav{
+margin-top: 7rem;
+font-family: "roboto";
+font-size: 1.5rem;
+
+}
+.bottom_res_nav i{
+    position: absolute;
+    right: 2rem;
+    color: #006dae;
+   
+}
+.bottom_res_nav p{
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+.bottom_res_nav p:hover{
+    color:  #006dae;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.apply{
+    color: black;
+    font-family: "poppins";
+width: 100%;
+    border: 1px solid #006dae;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0rem;
+left: 1rem;
+font-weight: 600;
+}
+.apply:hover{
+color: white;
+cursor: pointer;
+background: #006dae;
+}
+.fa-bars{
+    display: none ;
+}
+.apply_mid{
+    font-family: "roboto";
+
+font-weight: 500;
+font-size: 1.5rem;
+border:1px solid #006dae;
+padding: 0.7rem;
+position: absolute;
+right: 3rem;
+top: 6.5rem;
+cursor: pointer;
+}
+.apply_mid:hover{
+    color: white;
+    background: #006dae
+}
+@media only screen and (max-width: 1400px) {
+.right_top_nav span{
+display: none;
+}
+.collapsable_div{
+    display: none;
+}
+.fa-bars{
+    display: block;
+}
+.apply_mid{
+    display: none;
+}
+.mid_top_nav{
+    display: none;
+}
+.top_nav{
+    width: 100%;
+
+}
+}
