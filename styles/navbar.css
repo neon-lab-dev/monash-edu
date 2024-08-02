@@ -27,6 +27,7 @@
     font-size: 1.5rem;
     margin-top: -0.2rem;
     cursor: pointer;
+
 }
 .fa-house{
 
@@ -105,7 +106,7 @@ padding-top: -1rem;
     font-family: "poppins";
     font-weight: 500;
     font-size: 1.3rem;
-    
+   
 }
 .collapsable_div .coll_p{ 
 margin: 2rem;
@@ -123,6 +124,7 @@ margin: 2rem;
     justify-content: space-between;
     padding: 1rem;
     margin-top: 0.8rem;
+   
 }
 .fa-bars{
     font-size: 2rem !important; 
@@ -132,7 +134,7 @@ margin: 2rem;
     background: #006dae;
     display: flex;
     color: white;
-    gap: 2rem;
+    gap: 1rem;
     padding: 0.5rem;
     font-family: "poppins";
     font-size: 1.5rem;
@@ -140,16 +142,18 @@ margin: 2rem;
     padding-right: 1rem;
 }
 .top_res_nav i{
-    margin-top: 0.2rem;
-    padding: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0rem;
+    font-size: 1.3rem !important;
 }
 .top_res_nav i:hover{
 background: #003d60;
 cursor: pointer;
 }
 .top_res_nav p{
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 0.5rem;
+
 }
 .top_res_nav p:hover{
 text-decoration: underline;
@@ -159,12 +163,12 @@ cursor: pointer;
 
 }
 .responsive_left_navbar{
-    position: absolute;
+    position: fixed;
     background: white;
-    height: 900px;
+    padding-bottom: 4rem;
     top: 0rem;
     left: 0rem;
-    display: none;
+    /* display: none; */
 }
 .fa-xmark{
     margin-top: 1rem;
@@ -198,15 +202,16 @@ font-size: 1.5rem;
 .apply{
     color: black;
     font-family: "poppins";
-width: 100%;
+width: 80%;
     border: 1px solid #006dae;
     text-align: center;
-    padding: 1rem;
-    font-size: 1.5rem;
-    position: absolute;
-    bottom: 0rem;
-left: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  
+    margin: auto;
+    margin-top: 5rem;
 font-weight: 600;
+
 }
 .apply:hover{
 color: white;
@@ -251,5 +256,19 @@ display: none;
 .top_nav{
     width: 100%;
 
+}
+.left_top_nav select{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+.left_top_nav{
+gap: 0.5rem;
+margin-left: 0.1rem;
+padding: 0;
+}
+.right_top_nav{
+    gap: 0.1rem;
+    font-size: 0.8rem;
 }
 }

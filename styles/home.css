@@ -8,6 +8,7 @@
 .search_box_div h1{
     margin-bottom: 1.6rem;
     margin-left: 2rem;
+  
 }
 .search_box_div p{
     font-size: 1.2rem;
@@ -44,7 +45,6 @@ margin-left: 1.5rem;
      margin: auto;
     padding-left: 1rem;
     padding-right: 1rem;
- 
 
 }
 .make_change p{
@@ -65,7 +65,6 @@ margin-bottom: 1rem;
    margin: auto;
    gap: 2rem;
    flex-wrap: wrap;
-    
 }
 .one_uni{
     display: flex;
@@ -231,11 +230,12 @@ box-shadow: 1px 1px 5px grey;
     margin-top: 3rem;
 
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 900px) {
 
 .uni{
     display: block;
-    width: fit-content;
+
+    padding: 1rem;
     margin: auto;
 
 
@@ -243,10 +243,13 @@ box-shadow: 1px 1px 5px grey;
 .make_change_vid{
     flex-direction: column;
 }
-/* .one_uni{
+.one_uni{
    
-  
-} */
+  width: 300px;
+}
+.one_uni p{
+    font-size: 0.8rem;
+}
 .top_change_vid{
     order: 1;
 
@@ -258,29 +261,27 @@ box-shadow: 1px 1px 5px grey;
     display: block;
 }
 .stats{
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 3rem;
 }
 .under_lat{
     display: block;
-    width: 400px;
+    width: 300px;
 }
 .lattest_news{
     width: fit-content;
     margin: auto;
     margin-top: 5rem;
 }
-.under_lat img{
-    width: 500px;
 
-}
 .under_lat img{
     width: 300px;
 
 }
 .lattest_news{
 width: 300px !important;
+
 }
 
 .under_lat p {
