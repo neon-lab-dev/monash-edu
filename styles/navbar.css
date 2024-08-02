@@ -6,6 +6,7 @@
     padding: 0.5rem;
 
     font-family: "roboto";
+    top: 0;
 }
 .right_top_nav{
     display: flex;
@@ -52,6 +53,8 @@ background: #003d60;
     font-size: 1.5rem;
     color: white;
     gap: 2rem;
+  
+
 
 }
 .mid_top_nav p{
@@ -82,7 +85,7 @@ background: #003d60;
 margin-top: -2rem;
 box-shadow: 1px 1px 5px grey;
 padding-top: -1rem;
-
+z-index: 2;
 }
 .hover_div:hover{
     display: block;
@@ -123,8 +126,9 @@ margin: 2rem;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    margin-top: 0.8rem;
+    margin-top: 0.5rem;
    
+     
 }
 .fa-bars{
     font-size: 2rem !important; 
@@ -134,13 +138,14 @@ margin: 2rem;
     background: #006dae;
     display: flex;
     color: white;
-    gap: 1rem;
+gap: 0.8rem;
     padding: 0.5rem;
     font-family: "poppins";
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding-right: 1rem;
 }
+
 .top_res_nav i{
     margin-top: 0.5rem;
     padding: 0rem;
@@ -151,7 +156,7 @@ background: #003d60;
 cursor: pointer;
 }
 .top_res_nav p{
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-top: 0.5rem;
 
 }
@@ -168,7 +173,15 @@ cursor: pointer;
     padding-bottom: 4rem;
     top: 0rem;
     left: 0rem;
-    /* display: none; */
+    display: none;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #0000003a;
+}
+.under_responsive_left_main{
+    background: white;
+    padding-bottom: 3rem;
 }
 .fa-xmark{
     margin-top: 1rem;
@@ -268,7 +281,10 @@ margin-left: 0.1rem;
 padding: 0;
 }
 .right_top_nav{
-    gap: 0.1rem;
+gap: 0rem;
     font-size: 0.8rem;
+}
+.mid_nav img{
+    width: 130px;
 }
 }

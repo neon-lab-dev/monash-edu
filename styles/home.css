@@ -1,28 +1,49 @@
-.search_box_div{
-    padding-top: 2rem;
-    font-family: "roboto";
-  
-
-    
-}
+   .search_box_div {
+            padding-top: 2rem;
+            height: 80vh;
+            font-family: "Roboto", sans-serif;
+            background: #0000004e;
+            position: relative; /* Ensure it positions the pseudo-element correctly */
+            overflow: hidden;
+            color: white; /* Hide any overflow from the pseudo-element */
+        }
+   .search_box_div::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("https://www.monash.edu/__data/assets/image/0004/3637282/Monash-Open-Day-2024-Web-Banner-150kb.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+          /* Adjust the blur radius as needed */
+            z-index: -1; /* Ensure the pseudo-element is behind the content */
+        }
 .search_box_div h1{
     margin-bottom: 1.6rem;
-    margin-left: 2rem;
-  
+    margin-left: 1.5rem;
+    font-size: 4rem;
+    margin-top: 3rem;
+  font-family: "roboto condensed";
 }
 .search_box_div p{
     font-size: 1.2rem;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 200px;
 }
 .search_box{
-    width: 70%;
+    width: 50%;
     margin: auto;
- border: 1px solid #006dae;
-    padding: 1rem;
+
+    padding: 1.3rem;
     border-radius: 50px;
     display: flex;
-    margin-top: 2rem;
-}
+
+    background: white;
+    color: black;
+    font-weight: 300;
+    }
 .search_box i{
     font-size: 2rem;
     color:#006dae;
@@ -39,7 +60,7 @@ margin-left: 1.5rem;
 .make_change{
     text-align: center;
     padding-top: 4rem;
-    font-family: "poppins";
+    font-family: "roboto";
     padding-bottom: 4rem;
      width: fit-content;
      margin: auto;
@@ -52,11 +73,13 @@ text-align: center;
 
 }
 .make_change p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: fit-content;
 }
 .make_change h1{
 margin-bottom: 1rem;
+font-size: 3rem;
+font-family: roboto condensed;
 }
 
 .uni{
@@ -93,7 +116,7 @@ margin-bottom: 1rem;
 
 }
 .make_change_vid{
-    width: 95%;
+ width: fit-content;
     margin: auto;
 box-shadow: 1px 1px 5px grey;
  display: flex;
@@ -101,13 +124,13 @@ box-shadow: 1px 1px 5px grey;
 
 }
 .top_change_vid{
-    height: 10rem;
-    background: #00000043;
+  
+  
     flex: 1;
 }
 .bottom_change_vid{
     padding: 2rem;
-    font-family:"poppins" ;
+    font-family:"roboto condensed" ;
     flex: 1
 }
 .bottom_change_vid h3{
@@ -118,7 +141,13 @@ box-shadow: 1px 1px 5px grey;
 .bottom_change_vid p{
     margin-top: 2rem;
     font-size: 1.2rem;
-    color: grey;
+   
+    font-family: roboto;
+
+}
+.top_change_vid i{
+    color: white;
+    position:relative;
 
 }
 .watch_change_vid{
@@ -139,22 +168,27 @@ box-shadow: 1px 1px 5px grey;
     padding: 2rem;
     margin-top: 3rem;
     width: 100%;
+    height: 70vh;
 }
 .statistics h2{
     font-family: "roboto";
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 .statistics .p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
     font-family: "poppins";
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3rem;
+
 }
 .stats{
     background: #000000b7;
     margin-top: 1rem;
-    padding: 2rem;
-    width: 400px;
+    padding: 4rem;
+    width: 30%;
 }
 .stats i{
     font-size: 5rem;
@@ -163,12 +197,12 @@ box-shadow: 1px 1px 5px grey;
 }
 .stats h4{
     font-family: roboto;
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 .stats p{
     font-family: roboto;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .stats span{
     font-size: 2rem;
@@ -185,10 +219,20 @@ box-shadow: 1px 1px 5px grey;
     width: fit-content;
 
 }
-
+.lat_h2{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: "roboto condensed";
+}
 .lattest_news{
 
-    margin-top: 4rem;
+ 
+ width: fit-content;
+ margin: auto;
+box-shadow: 1px 1px 5px grey;
+   margin-top: 4rem;
+   margin-bottom: 4rem;
 }
 .lattest_news h2{
     margin: auto;
@@ -203,11 +247,12 @@ box-shadow: 1px 1px 5px grey;
     gap: 2rem;
 }
 .under_lat img{
-    width: 500px;
+    width: 100%;
+    height: 100%;
 
 }
 .under_lat div{
- width: 300px;
+ width: 100%;
 }
 .under_lat div h3{
     color: #006dae;
@@ -217,7 +262,8 @@ box-shadow: 1px 1px 5px grey;
     margin-bottom: 2rem;
 }
 .under_lat p {
-    width: 500px;
+width: 400px;
+
     font-size: 1.3rem;
     font-family: "roboto";
     margin-bottom: 4rem;
@@ -229,8 +275,18 @@ box-shadow: 1px 1px 5px grey;
 .impact{
     margin-top: 3rem;
 
+}.top_change_vid {
+    width: 570px;
+
 }
-@media only screen and (max-width: 900px) {
+.make_change_vid img{
+    width: 100%;
+ height: 100%;
+}
+.make_change_vid{
+    width: 63%;
+}
+@media only screen and (max-width: 1400px) {
 
 .uni{
     display: block;
@@ -242,14 +298,14 @@ box-shadow: 1px 1px 5px grey;
 }
 .make_change_vid{
     flex-direction: column;
+  
+
 }
 .one_uni{
    
-  width: 300px;
+  width: 100%;
 }
-.one_uni p{
-    font-size: 0.8rem;
-}
+
 .top_change_vid{
     order: 1;
 
@@ -267,27 +323,92 @@ box-shadow: 1px 1px 5px grey;
 }
 .under_lat{
     display: block;
-    width: 300px;
+
+}
+.under_lat p{
+    width: 100%;
+    font-size: 1rem;
+}
+.under_lat div{
+    padding: 1rem;
 }
 .lattest_news{
-    width: fit-content;
+
     margin: auto;
     margin-top: 5rem;
 }
 
-.under_lat img{
-    width: 300px;
 
-}
 .lattest_news{
-width: 300px !important;
 
+width: 80%;
 }
 
-.under_lat p {
-    width: 300px;
-}
+
 option{
 font-size: 0.7rem;
 }
+.make_change_vid{
+width: 90% ;
 }
+.make_change_vid img{
+   width: 100%;
+
+}
+.make_change_vid p{
+    font-size: 1rem;
+}
+
+
+.top_change_vid{
+width: fit-content;
+
+}
+.impact img{
+
+  margin-bottom: 2rem;
+}
+.search_box{
+       width: 70%;
+        padding: 0.7rem;
+       
+}
+.search_box_div h1{
+    font-size: 2rem;
+    margin-top: 2rem;
+
+}
+.search_box_div p{
+    margin-bottom: 2rem;
+}
+.search_box_div{
+     height:40%;
+     padding-bottom: 2rem;
+}
+.make_change h1{
+    font-size: 2rem;
+}
+.make_change p{
+    font-size: 1.5rem;
+}
+.statistics{
+  height: 100%;
+}
+.statistics h2{
+ font-size: 1.5em;
+}
+.statistics .p{
+    font-size: 1rem;
+    width: 100%;
+}
+.stats{
+    padding:1rem;
+}
+.stats h4{
+    font-size: 1.2rem;
+}
+.stats p{
+    font-size: 1rem;
+}
+}
+
