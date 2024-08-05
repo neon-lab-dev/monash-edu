@@ -41,7 +41,11 @@ This project is an HTML, CSS, and JavaScript website. The structure of the proje
 - JavaScript files will be in the `scripts` folder, with the same name as the HTML page, e.g., `index.js`, `about.js`.
 - `script.js` in the `scripts` folder will contain reusable scripts like the navbar script and other reusable functions.
 - `global.css` in the `styles` folder will contain global CSS styles.
+- Static files like images, videos should be in `assets/videos/...`, `assets/images/...`
 
+### Globals
+  - `global.css` includes all the css that is used gloablly like navbar, foooter css.
+  - `script.js` is also gloabl js code that is used in all pages like navbar, footer etc.
 ### Including Global CSS
 
 Don't forget to include `global.css` in your CSS files.
