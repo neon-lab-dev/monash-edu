@@ -1,6 +1,6 @@
 .search_box_div {
   padding-top: 2rem;
-  height: 90vh;
+  height: 85vh;
   font-family: "Roboto", sans-serif;
   background: #0000004e;
   position: relative; /* Ensure it positions the pseudo-element correctly */
@@ -21,9 +21,9 @@
   z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 .search_box_div h1 {
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
   margin-left: 1.5rem;
-  font-size: 3rem;
+  font-size: 40px;
   margin-top: 2rem;
   font-family: "roboto condensed";
 }
@@ -49,10 +49,9 @@
   color: #006dae;
   margin-left: 1rem;
 }
-.search_box span {
-  font-size: 1.2rem;
-  margin-left: 1.5rem;
-  display: block;
+.search_box input{
+  border: none;
+  margin-left: 1rem;
 }
 .make_change {
   text-align: center;
@@ -69,12 +68,12 @@
   text-align: center;
 }
 .make_change p {
-  font-size: 2rem;
+  font-size: 22px;
   width: fit-content;
 }
 .make_change h1 {
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 40px;
   font-family: roboto condensed;
 }
 
@@ -109,7 +108,7 @@
 .one_uni h3 {
   color: #006dae;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 20px;
 }
 .one_uni p {
   font-size: 1rem;
@@ -130,7 +129,7 @@
   flex: 1;
 }
 .bottom_change_vid h3 {
-  font-size: 1.7rem;
+  font-size: 30.4px;
 }
 .bottom_change_vid p {
   margin-top: 2rem;
@@ -169,11 +168,11 @@
 }
 .statistics h2 {
   font-family: "roboto";
-  font-size: 3rem;
+  font-size: 40px;
   margin-bottom: 1rem;
 }
 .statistics .p {
-  font-size: 1.6rem;
+  font-size: 22px;
   font-weight: 400;
   font-family: "poppins";
   width: 70%;
@@ -194,12 +193,12 @@
 }
 .stats h4 {
   font-family: roboto;
-  font-size: 1.5rem;
+  font-size: 19.2px;
   margin-bottom: 2.5rem;
 }
 .stats p {
   font-family: roboto;
-  font-size: 1rem;
+  font-size: 14px;
 }
 .stats span {
   font-size: 2rem;
@@ -238,7 +237,7 @@
   margin: auto;
   text-align: center;
   font-family: "roboto";
-  font-size: 1.8rem;
+  font-size: 24px;
   margin-bottom: 3rem;
 }
 .under_lat {
@@ -255,8 +254,8 @@
 }
 .under_lat div h3 {
   color: #006dae;
-  font-size: 1.2rem;
-  font-family: "roboto";
+  font-size: 24px;
+  font-family: "roboto condensed";
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -341,11 +340,12 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
 .article_main h3{
   color: #006dae;
   font-family: "roboto condensed";
-  font-size: 1.2rem;
+  font-size: 24px;
   padding-bottom: 1rem;
 }
 .article_main p{
   font-family: roboto;
+  font-size: 1rem;
 }
 .article_left{
 width: 300px;
@@ -554,3 +554,5 @@ margin-bottom: 2rem;
   }
  
 }
+
+

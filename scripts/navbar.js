@@ -74,3 +74,6 @@ closeIcon.addEventListener("click", function () {
        event.stopPropagation();
      });
    });
+
+
+   
