@@ -146,12 +146,19 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
+}
+.desc-card{
+    height: 100%;
     border-bottom: 1px solid #ddd;
 }
 
 .desc-1-text{
     padding: 1.5rem 1rem;
     
+}
+.desc-1-text a{
+    color: #006dae;
+    text-decoration: none;
 }
 .desc-1-text h2{
     color: #006dae;
@@ -197,16 +204,24 @@
     background-color: #fff;
     padding-left: 0;
 }
+.history-link{    
+    color: #006dae;
+    text-decoration: none;
+    
+}
 .history-card{
     background-color: #fff;
-    border: thin solid #ddd;
-    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+    border: thin solid #ddd; 
     display: flex;
     flex-flow: column wrap;
     font-family: Roboto, sans-serif;
     font-weight: 400;
     margin-bottom: 2rem;
     position: relative;
+}
+.history-card:hover{
+    box-shadow: 8px 8px 3px #0000001f, 6px 6px 9px #96bbbf3d;
+    transition: box-shadow 0.4s ease-in-out;
 }
 .history-media{   
     background-repeat: no-repeat;
@@ -244,7 +259,12 @@
     text-align: center;
 }
 .proud-history{
-    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+    border: thin solid #ddd;
+
+}
+.proud-history:hover{
+    box-shadow: 8px 8px 3px #0000001f, 6px 6px 9px #96bbbf3d;
+    transition: box-shadow 0.4s ease-in-out;
 }
 .proud-history-img{
     width: 100%;
@@ -300,7 +320,15 @@
     justify-content: space-between;
     margin: 0;
     width: 100%;
-    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+   border: 1px solid #ddd;
+}
+.strategy-card-a{
+    color: #006dae;
+    text-decoration: none;
+}
+.strategy-card-a:hover{
+    box-shadow: 5px 5px 5px #0000001f, 5px 5px 6px #96bbbf3d;
+    transition: box-shadow 0.4s ease-in-out;
 }
 .strategy-card-body{
     margin: 20px 10px 30px 20px;
@@ -487,5 +515,7 @@
     }
     .history-h1{
         font-size: 1.9rem;
+        line-height: 1.2;
+        color: #000;
     }
 }
