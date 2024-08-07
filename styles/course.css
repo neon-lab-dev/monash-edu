@@ -1,0 +1,222 @@
+.mid_nav_course img {
+  margin-top: -3.7rem;
+  margin-left: 0.5rem;
+}
+
+.coll_p {
+  width: 100%;
+}
+.top_div_course_a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #006dae;
+  font-family: roboto condensed;
+  font-weight: 800;
+  text-align: center;
+
+  display: block;
+
+
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+  width:fit-content;
+
+margin: auto;
+margin-top: 1rem;
+  
+}
+.top_coll_div {
+  width: fit-content;
+
+}
+.apply_mid_top {
+  position: relative;
+
+  width: fit-content;
+  left: -2rem;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+margin-left: 1rem !important;
+}
+
+
+.mid_nav_course{
+ 
+    display: block;
+  
+
+}
+.collapsable_course{
+    display: flex;
+    margin: 0 !important;
+
+}
+.apply_mid_top{
+    display: block;
+    position: static;
+    margin: 0 !important;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem ;
+}
+.mid_nav_top_course{
+    display: flex;
+    justify-content: space-between;
+}
+.navbarIcon_threeLines{
+    display: none;
+}
+.study_course_a{
+    display: none;
+ 
+}
+.bottom_res_nav{
+    margin-top: 4rem;
+}
+.search_box_div_course{
+background-image: url("	https://www.monash.edu/__data/assets/image/0009/2366289/angular-layers-blue-banner.jpg");
+}
+.search_box_div_course{
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    background-position: center;
+    background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+
+}
+
+.study_course_a_res{
+    display: block !important;
+    font-size: 21px;
+    margin-top: 2rem !important;
+    font-weight: 500;
+}
+.Explore_course{
+    width: 99%;
+    margin: auto;
+    position: relative;
+    top: -4rem;
+    text-align: center;
+ background: white;
+ font-family: roboto ;
+ font-size: 22px;
+ padding-top: 7rem;
+}
+.Explore_course h1{
+    font-size: 40px;
+    font-family: roboto condensed;
+}
+.Explore_course p{
+    margin-top: 1rem;
+    width: 766px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.view_courses{
+    display: flex;
+    flex-wrap: wrap;
+gap: 1.2rem;
+
+}
+.viwe_all_courses_main h1{
+font-size: 30.4px;
+margin-bottom: 2rem;
+font-family: roboto condensed;
+}
+.viwe_all_courses_main{
+    width: 1140px;
+    margin:auto;
+}
+.vc{
+    width: 270px;
+    height: 130px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 1px 1px 2px grey;
+
+}
+.vc h3{
+    font-size: 19.2px;
+    font-family: "roboto condensed";
+    color: #006dae;
+
+}
+.vc p{
+    color: #505050;
+    font-size: 15px;
+    margin-top: 14px;
+    font-family: roboto;
+}
+@media only screen and (max-width: 1000px) 
+{
+    .collapsable_course{
+        display: none;
+    }
+    .apply_mid_top{
+        display: none;
+    }
+    .navbarIcon_threeLines{
+        display: block;
+    }
+    .mid_nav_course img {
+  margin-top: 0rem;
+  margin-left: 0.5rem;
+}
+.top_div_course_a{
+    display: none;
+}
+.study_course_a{
+    display: block;
+    font-size: 19.2px;
+}
+.search_box_div_course{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+
+}
+.Explore_course h1{
+    font-size: 28px;
+    font-family: roboto condensed;
+}
+.Explore_course p{
+    width: 80%;
+    font-size: 18px;
+}
+.Explore_course{
+    top: 0;
+    padding-top: 4rem;
+}
+.view_courses{
+    display: block;
+width: 320px;
+    margin: auto;
+}
+.viwe_all_courses_main h1{
+    width: fit-content;
+    font-size: 24px;
+    margin-left: 1rem;
+}
+.viwe_all_courses_main{
+    width: 100%;
+    margin: auto;
+}
+.vc{
+    width: 288px;
+    height: 125px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.vc h3{
+font-size: 17.6px;
+}
+.vc p{
+    font-size: 14px;
+}
+}
