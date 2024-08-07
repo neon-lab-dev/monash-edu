@@ -1,0 +1,446 @@
+@import url("./global.css");
+
+
+.bg-wrapper{
+    background: #fff;
+    padding: 0 1rem 2.8125rem;
+}
+.content-wrapper{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.intro-text{
+    clear: both;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 700;
+}
+.intro-text h2{
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 1.125rem;
+    margin-top: 3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: .3125rem;
+}
+.about-who-sec{
+    margin: 0 auto -2rem;
+    max-height: 172px;
+}
+.about-who-banner{
+    background-image: url(/assets/images/about-who-banner.jpg);
+    height: 170px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    max-height: 172px;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.search_box {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    margin: auto;
+    padding: 0.8rem;
+    border-radius: 50px;
+    display: flex;
+    background: white;
+    color: black;
+    font-weight: 300;
+  }
+  .search_box i {
+    font-size: 1.5rem;
+    color: #006dae;
+    margin-left: 1rem;
+  }
+  .search_box input{
+    border: none;
+    margin-left: 1rem;
+  }
+
+.monash-m__wrapper{
+    display: none;
+}
+
+.introduction{
+    color: #000;
+    font-family: Roboto, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 0;
+    padding-bottom: 2rem;
+}
+
+.card-grid{
+    margin-bottom: 20px;
+}
+.card-grid-list{
+    grid-gap: 20px;
+    display: grid;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.card-grid-item{
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    word-wrap: break-word;
+    background-clip: initial;
+    background-color: #fff;
+    
+    border-radius: .25rem;
+    min-width: 0;
+    position: relative;
+}
+.card-body{
+    margin: 20px 10px 30px 20px;
+    width: 100%;
+}
+.card-body-h3{
+    color: #000;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+.card-grid-item a{
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+    color: #006dae;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: box-shadow .25s ease-in-out;
+    width: 100%;
+}
+.card-head{
+    color: #006dae;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+.card-text{
+    color: #505050;
+    font-family: Roboto, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+}
+
+.read-more p{
+    color: #505050;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.read-more p a{
+    color: #006dae;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+.impact-title{
+    color: #000;
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.impact{
+    background-color: #fff;
+    border: thin solid #ddd;
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    position: relative !important;
+    text-decoration: none !important;
+    transition: all .25s ease-in-out;
+}
+.history-media{   
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);  
+    position: relative;
+}
+.history-img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.history-section{
+    background-color: #fff;
+    padding: 3rem 2rem 2rem;
+}
+.history-section-tag{
+    background-color: #f6f6f6;
+    color: #505050;
+    display: inline-block;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: .875rem;
+    font-weight: 700;
+    left: 0;
+    line-height: 1;
+    padding: .625rem 2rem;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+}
+
+.history-section-desc p{
+    color: #505050;
+    margin: 0 0 2rem;
+    text-align: left;
+    text-decoration: none;
+}
+.impact-button{
+    zoom: 1;
+    background-color: #006dae;
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    padding: .75rem 1.0625rem;
+    text-align: center;
+    transition: all .15s;
+}
+.panel-section{
+    border: solid 1px #E3E3E3;
+    transition: all 0.25s ease-in-out;
+    margin-bottom: 1.25rem;
+}
+.panel-section:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.panel-section-h3{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    height: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    /* font-stretch: condensed; */
+    line-height: 1.3;
+    color: #000;
+    cursor: pointer;
+}
+.panel-head{
+    margin-right: auto;
+    padding-left: 1rem;
+}
+
+
+.our-history-title{
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: #000;
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.proud-history-div{
+    margin-top: 2rem;
+}
+.history-link{    
+    color: #006dae;
+    text-decoration: none;
+}
+.proud-history{
+    border: thin solid #ddd;
+}
+.proud-history:hover{
+    box-shadow: 8px 8px 3px #0000001f, 6px 6px 9px #96bbbf3d;
+    transition: box-shadow 0.4s ease-in-out;
+}
+.proud-history-img{
+    width: 100%;
+}
+.proud-history-head{
+    max-width: 75ch;
+    min-height: 80px;
+    overflow: hidden;
+    padding: 1.5rem;
+    text-overflow: ellipsis;
+}
+.proud-history h3{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-top: 0;
+    max-width: 75ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Roboto Condensed, sans-serif;
+    color: #006dae;
+}
+.proud-history p{
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 12px;
+    color: #505050;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 115ch;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+@media screen and (min-width:960px){
+    .content-wrapper{
+        max-width: 73.25rem;
+        padding: 0 1rem;
+    }
+    .content-wrapper-text {
+        max-width: 70%;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .intro-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .intro-text h2{
+        font-size: 2.5rem;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    .introduction{
+        font-size: 1.375rem;
+        line-height: 1.4;
+    }
+    .impact-title{
+        font-size: 1.9rem;
+    }
+    .impact{
+        flex-flow: row wrap;
+        min-height: 345px;
+    }
+    .history-media{
+        background-position: 100%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+        display: block;
+        height: 100%;
+        order: 2;
+        padding-top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+    }
+    .history-section-overlay{
+        background-color: #fff;
+        max-width: 58%;
+    }
+    .history-section-tag{        
+        margin: 1.75rem 0 0;
+        padding: .875rem 2.375rem;
+        position: static;
+    }
+    .history-section{
+        background: #0000;
+        -webkit-clip-path: none;
+        clip-path: none;
+        margin: 1.75rem 2.375rem 2.625rem;
+        max-width: 75%;
+        overflow: hidden;
+        padding: 0;
+    }
+    .proud-history-head{
+        
+    }
+}
+
+@media screen and (min-width:600px){
+    .about-who-sec{
+        margin: 0 auto -5rem;
+        max-height: 300px;
+        
+    }
+    .about-who-banner{
+        animation: none;
+        height: 250px;
+        max-height: 300px;
+        opacity: 1;
+        padding: 0 0 5rem;
+
+    }
+    .search_box{
+        width: 60%;
+        left: 20%;
+    }
+    .monash-m__wrapper{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        transform: scaleX(.25) translateX(150%);
+    }
+    .monash-m{
+        background: #fff;
+        height: 100%;
+        margin-bottom: -1px;
+        opacity: .35;
+        width: 384px;
+        animation: 2s ease, 8s ease infinite;
+        margin-right: 4rem;
+    }
+
+    .card-grid-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .proud-history{
+        display: flex;
+        height: 161px;
+    }
+    .proud-history-img{        
+        display: flex;
+        height: 161px;
+        max-width: 255px;
+        min-width: 255px;
+    }
+}
