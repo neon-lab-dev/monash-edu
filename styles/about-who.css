@@ -1,6 +1,69 @@
 @import url("./global.css");
 
+.panel-links-head{
+    max-height: 90px;
+    overflow: hidden;
+    transition: max-height .6s ease-out;
+    display: block;
+    border: solid 1px #CBCBCB;
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+    margin-bottom: 20px;
+}
+.panel-links-head[open]{
+    max-height: 3000px;
+}
+.panel-links-head:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.details.arrow[open]{
+    transform: rotate(180deg);
+}
+.panel-links-trigger{
+    display: block;
+    padding: 0rem .375rem;
+}
+.panel-open{
+    padding: 0 .9375rem;
+}
+.panel-open-inner-box{
+    border-top: solid 1px #CBCBCB;
+    position: relative;
+}
+.panel-box-wrapper{
+    padding-top: 1.25rem;
+}
+.panel-box-wrapper p{
+    color: #505050;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+.panel-img-box{
+    padding-bottom: 1em;
+    padding-right: 2em;
+    clear: both;
+}
+.panel-img-box img{
+    padding-bottom: 1em;
+    float: left;
+    margin-right: 1.875rem;
+    width: 250px;
+}
 
+.panel-list{
+    padding-left: 40px;
+    margin: 16px 0px;
+}
+.panel-img-box a{
+    color: #006dae;
+    text-decoration: underline;
+}
+.panel-list-item{
+    margin: .5rem 0;
+    color: #505050;
+    font-weight: 400;
+    font-family: sans-serif;
+}
 .bg-wrapper{
     background: #fff;
     padding: 0 1rem 2.8125rem;
@@ -39,7 +102,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     left: 0;
-    max-height: 172px;
+    /*max-height: 172px;*/
     overflow: hidden;
     width: 100%;
     z-index: -1;
@@ -185,6 +248,9 @@
     position: relative !important;
     text-decoration: none !important;
     transition: all .25s ease-in-out;
+}
+.impact:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .history-media{   
     background-repeat: no-repeat;
@@ -350,6 +416,9 @@
     .introduction{
         font-size: 1.375rem;
         line-height: 1.4;
+    }
+    .about-who-banner{
+        height: 340px !important;
     }
     .impact-title{
         font-size: 1.9rem;
