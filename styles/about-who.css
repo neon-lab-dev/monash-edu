@@ -96,7 +96,7 @@
     max-height: 172px;
 }
 .about-who-banner{
-    background-image: url(/assets/images/about-who-banner.jpg);
+    background-image: url(../assets/images/about-who-banner.jpg);
     height: 170px;
     background-position: 50%;
     background-repeat: no-repeat;

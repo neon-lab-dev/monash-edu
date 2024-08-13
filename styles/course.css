@@ -1,3 +1,14 @@
+.content_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.content_wrapper{
+    max-width: 73.25rem;
+    padding: 0 1rem;
+}
 .mid_nav_course img {
   margin-top: -3.7rem;
   margin-left: 0.5rem;
@@ -13,25 +24,18 @@
   font-family: roboto condensed;
   font-weight: 800;
   text-align: center;
-
   display: block;
-
-
   margin-top: 1.5rem;
   margin-bottom: 0.3rem;
   width:fit-content;
-
-margin: auto;
-margin-top: 1rem;
-  
+  margin: auto;
+  margin-top: 1rem;
 }
 .top_coll_div {
   width: fit-content;
-
 }
 .apply_mid_top {
   position: relative;
-
   width: fit-content;
   left: -2rem;
   padding: 0.5rem;
@@ -119,10 +123,9 @@ width: 100%;
     margin-bottom: 3rem;
 }
 .view_courses{
-    display: flex;
-    flex-wrap: wrap;
-gap: 1.2rem;
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 .viwe_all_courses_main h1{
 font-size: 30.4px;
@@ -130,17 +133,16 @@ margin-bottom: 2rem;
 font-family: roboto condensed;
 }
 .viwe_all_courses_main{
-    width: 1140px;
     margin:auto;
+    max-width: 73.25rem;
+    padding: 0 1rem;
 }
 .vc{
-    width: 270px;
     height: 130px;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 1px 1px 2px grey;
-
 }
 .vc h3{
     font-size: 19.2px;
@@ -182,12 +184,16 @@ font-family: roboto condensed;
   align-items: center;
   justify-content: center;
   text-align: center; /* Center text */
-  width:380px ;
+  width:330px ;
   height: 160px;
   margin: auto;
-
 }
-
+.child_div{
+    overflow: hidden;
+    width: 330px;
+    height: 160px;
+  margin: auto;
+}
 .child h3, .child-item h3 {
   margin: 0;
   padding: 10px; /* Padding for readability */
@@ -198,10 +204,12 @@ font-size: 24px;
 }
 .child:hover, .child-item:hover {
     text-decoration: underline;
-
     cursor: pointer;
-    
+    transform: scale(1.1) ;
+    transform-origin: 50% 50%;
+    transition: transform 0.7s ease;
 }
+
 .title{
     text-decoration: none;
     font-family: "roboto";
@@ -212,17 +220,15 @@ font-size: 24px;
 .tolggler_divs{
     display: flex;
     text-decoration: none;
-      overflow-x: auto;
-      width: fit-content;
-      margin:auto;
-      gap:4rem;
-      font-size: 20px;
-      
-      color: rgba(0, 0, 0, 0.444);
-      margin-bottom: 2rem;
+    overflow-x: auto;
+    width: fit-content;
+    margin:auto;
+    gap:4rem;
+    font-size: 20px;
+    border-bottom: #b2b2b2 1px solid;  
+    color: rgba(0, 0, 0, 0.444);
+    margin-bottom: 2rem;
 }
-
-
 .title.active {
   color: black;
   text-decoration: underline;
@@ -230,7 +236,6 @@ font-size: 24px;
 }
 #child1, #child2, #child3 {
   display: none;
- 
 }
 
 /* Show active child section */
@@ -240,11 +245,12 @@ font-size: 24px;
   transition: 2s;
 }
 .main_contain{
-    display: flex;
-    flex-wrap: wrap;
-gap: 1rem;
-width: 70%;
-margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: auto;
+    max-width: 73.25rem;
+    padding: 0 1rem;
 }
 .under_task .icon{
     height: 32px;
@@ -252,7 +258,6 @@ margin: auto;
     background-image: url("../assets/courseImg/sprites.svg");
     background-position: -4px -192px;
     background-repeat: no-repeat;
-
 }
 .under_task .icon::before{
     background-size: 752px 560px;
@@ -262,10 +267,8 @@ margin: auto;
     height: 158px;
     width: fit-content;
     margin: auto;
-margin-bottom: 4rem;
-
+    margin-bottom: 4rem;
     margin-top: 2rem;
-
 border-bottom: 1px solid #006dae;
 }
 .under_task{
@@ -292,7 +295,6 @@ background: rgba(181, 181, 181, 0.145);
     font-family: roboto condensed;
     font-size: 1rem;
     text-align: center;
-    
 
 }.major_t h1{
     font-size: 30.4px;
@@ -307,8 +309,9 @@ background: rgba(181, 181, 181, 0.145);
 }
 
 .major_t{
-    width: 1140px;
     margin: auto;
+    max-width: 73.25rem;
+    padding: 0 1rem;
 }
 .see_all img{
 width: 288px;
@@ -316,38 +319,33 @@ width: 288px;
 .see_all h3{
     font-size: 19px;
 }
-.last {
-    width: 1140px;
-    display: flex;
-    margin: auto;
-    margin-top: 2rem;
+.see_all a{
+    text-decoration: underline;
+    color: #006dae;
 }
-.last h3{
-    font-size: 20px;
-    width: 100%;
-    margin: auto;
-}
-.last p{
-    font-size: 14px;
-    width: 100%;
-    margin: auto;
-}
+
 .see_all{
     display: flex;
-    width: 1140px;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 2rem;
+    max-width: 73.25rem;
+    padding: 0 1rem;
 }
-.see_all div,.see_all img{
-    width: 555px;
+.see_all div{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+}
+.see_all img{
+    width: 90%;
 }
 .see_all h3{
     font-size: 24px;
     font-family: roboto condensed;
     color: #006dae;
-    margin-left: 1rem;
     margin-top: 1rem;
+    text-align: left;
 }
 .last img{
     width: 255px;
@@ -360,19 +358,26 @@ height: 161px;
     margin-bottom: 2rem;
 }
 .last div{
-    padding: 1.5rem;
-
-
+    padding: 1rem 1rem 1rem;
 }
 .last p{
     color: grey;
     font-size: 16px;
     font-family: roboto;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    margin: 0;
+    overflow: hidden;
+    color: #505050;
+    max-width: 115ch;
 }
 .last{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        box-shadow: 1px 1px 2px grey;
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 1px 1px 2px grey;
+    width: 100%;
 }
 .last:hover{
     box-shadow: 1px 1px 5px grey;
@@ -387,11 +392,31 @@ height: 161px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-@media (max-width: 400px) {
- 
+
+@media only screen and (max-width: 1024px){
+    .content_wrapper{
+        max-width: 64rem;
+        padding: 0;
+        margin: 0;
+    }
+    .main_contain{
+        padding: 0;
+        margin: 0;
+    }
+    .child{
+        width: 310px;
+    }
+    .last{
+        margin: 2rem;
+        max-width: 60rem;
+    }
 }
-@media only screen and (max-width: 1000px) 
+@media only screen and (max-width: 960px) 
 {
+    .content_wrapper{
+        margin: 0 auto;
+        max-width: 100%;
+    }
     .collapsable_course{
         display: none;
     }
@@ -415,8 +440,6 @@ height: 161px;
 .search_box_div_course{
     padding-top: 5rem;
     padding-bottom: 5rem;
-
-
 }
 .Explore_course h1{
     font-size: 28px;
@@ -431,21 +454,21 @@ height: 161px;
     padding-top: 4rem;
 }
 .view_courses{
-    display: block;
-width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
 }
 .viwe_all_courses_main h1{
     width: fit-content;
     font-size: 24px;
-    margin-left: 1rem;
+    margin: 1rem;
 }
 .viwe_all_courses_main{
     width: 100%;
-    margin: auto;
+    padding: 20px;
 }
 .vc{
-    width: 288px;
+    width: 100%;
     height: 125px;
     margin: auto;
     margin-bottom: 1rem;
@@ -469,9 +492,15 @@ margin-right: -8rem;
     width: 100%;
   }
   .child,.child-item{
-    width: 155px;
-    height: 80px;
-    font-size: 18px;
+    align-items: center;
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    height: 5rem;
+    overflow: hidden;
+    padding: .3125rem;
+    position: relative;
+    width: 40vw;
     margin: 0;
   }
   .child-item h3{
@@ -481,24 +510,29 @@ font-size: 14px;
     font-size: 14px;
   }
   .main_contain{
-gap: 1rem;
+    gap: 1rem;
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
   }
   .major_tasks_main{
     display: block;
     height: 100%;
+    width: 90%;
   }
   .under_task{
     display: flex;
     height: 106.4px;
-    width: 274px;
-    
+    width: 100%;
     align-content: center;
     align-items: center;
     gap: 1.3rem;
+    margin-bottom: 5px;
   }
   .under_task p{
     font-size:18px;
@@ -507,89 +541,111 @@ gap: 1rem;
   .under_task i{
     margin: 0;
     margin-left: 2rem;
-  
     width: 32px;
-    
-    
   }
 .major_t{
-    width: 288px;
-
+    width: 100%;
+    padding: 20px;
 }
 .major_t h1{
     font-size: 24px;
 }
 .major_t p{
-    font-size: 14px;
+    font-size: 16px;
+    font-family: roboto;
+    color: #505050;
 }
+
 .see_all img{
 width: 288px;
 }
 .see_all h3{
     font-size: 19px;
 }
-.last {
-    width: 288px;
-}
+
 .last h3{
     font-size: 20px;
-    width: 240px;
     margin: auto;
 }
 .last p{
     font-size: 14px;
-    width: 240px;
-    margin: auto;
+    margin: 0.5rem;
+    color:#505050;
 }
 .last{
-    display: block;
-
+    width: 90%;
+    display: flex;
+   
 }
 .last img{
     margin: 0;
     width: 288px;
 }
-.last div{
-    padding: 0.5rem;
-}
-.last h3{
-    margin-bottom: 1rem;
-}
+
 .see_all{
-    display: block;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .see_all h3{
-    width: 288px;
-    font-size: 16px;
+    font-size: 20px;
 }
 .see_all div{
-    width: fit-content;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+.video-container{
+    background: #000;
+    width: 80%;
+    height: 400px;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 iframe{
-    height: 150px;
-    width: 288px;
-}
-.see_all div{
-    margin: auto;
-    margin-bottom: 2rem;
- 
+    height: 100%;
+    width: 100%;
 }
 .see_all img{
     width: 100%;
 }
 }
 
+@media only screen and (max-width: 600px){
+    .view_courses{
+        display: block;
+    }
+    .video-container{
+        height: 300px;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+    }
+    .last img{
+        width: 100%;
+        height: 100%;
+    }
+    .title{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .main_contain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+}
 
 @media only screen and (max-width: 320px) 
 {
-    .title{
-    width: 100%;
-}
  .title {
     flex: 1 0 100%;
-    font-size: 14px;
+    font-size: 12px;
 margin-right: -6rem;
   }
   .tolggler_divs{
@@ -608,9 +664,7 @@ font-size: 14px;
     font-size: 14px;
   }
   .main_contain{
-gap: 0.5rem;
     width: 100%;
-    padding-left: 1rem;
     padding-right: 1rem;
   }
   
