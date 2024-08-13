@@ -32,7 +32,7 @@ Example branch names:
 - `fix/navbar-bug`
 - `ui/about-page`
 
-### Project Structure
+### Project Structure (Not Strict, Can be modified as per needed)
 
 This project is an HTML, CSS, and JavaScript website. The structure of the project is as follows:
 
