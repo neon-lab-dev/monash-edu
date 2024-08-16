@@ -95,6 +95,12 @@
 
       <div class="top_coll_div">
         <a href="" class="top_div_course_a">STUDY AT MONASH</a>
+          <div class="sub_top_div_course_a">
+            As a <select class="drop_arrow_menu">
+              <option>Domestic student</option>
+              <option>International student</option>
+            </select>
+          </div>
         <div class="collapsable_div collapsable_course">
           <div class="mid_nav_hover_div">
             <p class="coll_p">WHY MONASH?</p>
@@ -253,7 +259,7 @@
             <div class="row py-4">
               <div class="col-xs-12 col-md-6">
                 <p class="font-bold">Course requirements</p>
-                <ul class="entry-req">
+                <ul class="entry-req course-box">
 
                   <li class="sq-icon__tick">Minimum Age</li>
                   <li class="sq-icon__tick">Academic</li>
@@ -266,7 +272,7 @@
               </div>
               <div class="col-xs-12 col-md-6 sub-req">
                 <p class="font-bold">Prerequisite subjects</p>
-                <ul>
+                <ul class="course-box">
 
                   <li class="sq-icon__tick">English
 
@@ -368,9 +374,23 @@
                       <p>Ready to dive into the details, the data and the dynamic
                         opportunities accounting provides?</p>
                     </div>
-                    <a data-show-elm="#course-description-1" data-show-hide href="#" class="align-right">Show more</a>
+                    <span id="show-more" class="align-right" onclick="toggleContent()"><u>Show more...</u></span>
                   </div>
                 </div>
+                <script>
+                  function toggleContent() {
+                      var moreText = document.getElementById("course-description-1");
+                      var btnText = document.getElementById("show-more");
+          
+                      if (moreText.style.display === "none") {
+                          btnText.innerHTML = "<u>Show less...</u>";
+                          moreText.style.display = "inline";
+                      } else {
+                          btnText.innerHTML = "<u>Show more...</u>";
+                          moreText.style.display = "none";
+                      }
+                  }
+              </script>
                 <div class="grid-col-sm-12 grid-col-md-4-9">
                   <section id="at-a-glance" class="course-page__info-box">
                     <h4>At a glance</h4>
@@ -437,21 +457,21 @@
                   <div class="tabs mobile-hidden">
                     <ul class="tabs__tab-list">
                       <li class="tabs__item" onclick="openTab('overview')">
-                        <span class="tabs__link js-tabs__link--w-nested">Overview</span>
+                        <span class="tabs__link js-tabs__link--w-nested overview">Overview</span>
                       </li>
                       <li class="tabs__item" onclick="openTab('entry-requirements')">
-                        <span class="tabs__link">Entry
+                        <span class="tabs__link entry-requirements">Entry
                           requirements</span>
                       </li>
                       <li class="tabs__item" onclick="openTab('course-structure')">
-                        <span class="tabs__link">Course
+                        <span class="tabs__link course-structure">Course
                           structure</span>
                       </li>
                       <li class="tabs__item" onclick="openTab('double-degree')">
-                        <span class="tabs__link">Double degree</span>
+                        <span class="tabs__link double-degree">Double degree</span>
                       </li>
                       <li class="tabs__item" onclick="openTab('application-fees')">
-                        <span class="tabs__link">Applications and
+                        <span class="tabs__link application-fees">Applications and
                           Fees</span>
                       </li>
                     </ul>
@@ -2980,9 +3000,6 @@
                       <div class="course__action-buttons">
                         <a class="btn-bordered" href="#application-fees"
                           data-anchor-click="[href=#application-fees]">How to apply</a>
-                        <a class="btn-bordered btn-bordered__mobile" href="#making-the-application-mobile
-" data-anchor-click="[href=#making-the-application-mobile
-]">How to apply</a>
                         <script>
                           const mobileApplyButtonSelector = ".content-inner__rhs .panel .btn-bordered__mobile[data-anchor-click]"
 
@@ -3124,39 +3141,6 @@
                   </div>
                 </div>
               </aside>
-              <div class="box-listing-element box-listing-element--sidebar" style="padding: 1.875rem;">
-                <div class="box-listing-element__blurb" style="padding: 0px;">
-                  <h2 class="international-rhs">
-                    International course guides
-                  </h2>
-                  <p>
-                    If you are an international student and wish to find out more about our
-                    courses, entry requirements, studying at Monash and more, please download
-                    our international course guides below.
-                  </p>
-                  <ul>
-                    <li><a
-                        href=""
-                        target="_blank">International course guide - Undergraduate (PDF)</a>
-                    </li>
-                    <li><a
-                        href=""
-                        target="_blank">International course guide - Graduate (PDF)</a>
-                    </li>
-                  </ul>
-
-                  <h2 class="international-rhs">
-                    <a href="">International
-                      Study Grants</a>
-                  </h2>
-                  <p><img src=""
-                      alt="International study grants" width="320" height="180">
-                  </p>
-                  <p><a href=""
-                      target="_blank">International Study Grants valued at up to $10,000</a>
-                  </p>
-                </div>
-              </div>
             </div>
             <div class="clearfix"></div>
           </div>
@@ -3214,13 +3198,25 @@
     <script src="./scripts/find-a-course/plugins.js"></script>
     <script src="./scripts/find-a-course/rebuild.js"></script>
     <script>
+      window.onload = function() {openTab('overview')}
       function openTab(tabName) {
         var i;
         var x = document.getElementsByClassName("tabs__target");
+        var tabLinks = document.getElementsByClassName("tabs__link");
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";  
         }
-        document.getElementById(tabName).style.display = "block";  
+        for (i = 0; i < tabLinks.length; i++) {
+          tabLinks[i].style.background = "";
+          tabLinks[i].style.borderBottom = "";
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        var selectedTabLinks = document.getElementsByClassName(tabName);
+        for (i = 0; i < selectedTabLinks.length; i++) {
+            selectedTabLinks[i].style.backgroundColor = "white";
+            selectedTabLinks[i].style.borderBottom = "4px solid #505050";
+        };
       }
       </script>
     <!-- content end -->
